@@ -9,7 +9,7 @@ function Result({ secretNumber, term }) {
 
         } else if (term < secretNumber) {
             result = 'Lower'
-        } else if (term == secretNumber) {
+        } else if (term === secretNumber) {
             result = 'Yipee Correct'
         } else {
             result = 'Enter valid input'
