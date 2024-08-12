@@ -1,7 +1,6 @@
 import React from 'react'
 
 function Result({ secretNumber, term }) {
-
     let result;
     if (term) {
         if (term > secretNumber) {
@@ -9,7 +8,7 @@ function Result({ secretNumber, term }) {
 
         } else if (term < secretNumber) {
             result = 'Lower'
-        } else if (term === secretNumber) {
+        } else if (Number(term) === secretNumber) {
             result = 'Yipee Correct'
         } else {
             result = 'Enter valid input'
